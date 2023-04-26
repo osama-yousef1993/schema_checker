@@ -1,0 +1,9 @@
+,SourceColumns,SourceType,DestinationType,Matching
+0,name,text,text,True
+1,slug,text,text,True
+2,id,text,text,True
+3,logo,text,text,True
+4,exchange_active_market_pairs,numeric,numeric,True
+5,nomics,json,json,True
+6,forbes,json,json,True
+7,last_updated,timestamptz,timestamptz,True

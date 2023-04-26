@@ -1,0 +1,7 @@
+,SourceColumns,SourceType,DestinationType,Matching
+0,is_index,boolean,boolean,True
+1,source,text,text,True
+2,target_resolution_seconds,integer,integer,True
+3,prices,json,json,True
+4,symbol,text,text,True
+5,interval,text,text,True

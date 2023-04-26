@@ -1,0 +1,3 @@
+,SourceColumns,SourceType,DestinationType,Matching
+0,id,text,text,True
+1,name,text,text,True
