@@ -1,6 +1,0 @@
-,SourceColumns,SourceType,DestinationType,Matching
-0,id,text,text,True
-1,symbol,text,text,True
-2,name,text,text,True
-3,platforms,text,jsonb,False
-4,last_updated,timestamptz,timestamptz,True

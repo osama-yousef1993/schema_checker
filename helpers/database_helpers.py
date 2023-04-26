@@ -39,7 +39,6 @@ class DatabaseHelper:
         return details
 
     def check_valid_schema(self, table_name, source, destination):
-        result = list()
         source_columns = list()
         source_types = list()
         destination_type = list()
@@ -53,23 +52,18 @@ class DatabaseHelper:
                     source_types.append(item[1])
                     destination_type.append(column_type)
                     matching.append(True)
-                    # res = f'column {item[0]} with type {item[1]} from Schema file and type {column_type} from Database Table is Match'
-                    # result.append(res)
                 else:
                     source_columns.append(item[0])
                     source_types.append(item[1])
                     destination_type.append(column_type)
                     matching.append(False)
-                    # res = f"column {item[0]} with type {item[1]} from Schema file and type {column_type} from Database Table is doesn't Match"
-                    # result.append(res)
             else:
-                res = f"column {item[0]} with type {item[1]} is doesn't exist in Database Table"
-                result.append(res)
+                source_columns.append(item[0])
+                source_types.append(item[1])
+                destination_type.append('')
+                matching.append(False)
         data['SourceColumns'] = source_columns
         data['SourceType'] = source_types
         data['DestinationType'] = destination_type
         data['Matching'] = matching
         WriteCSV().build_csv(table_name, data)
-        # with open(f'check_result/{table_name}.txt', 'w+') as f:
-        #     for res in result:
-        #         f.write(f'{res}\n')

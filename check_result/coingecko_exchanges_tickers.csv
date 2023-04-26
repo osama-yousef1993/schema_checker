@@ -1,3 +1,0 @@
-,SourceColumns,SourceType,DestinationType,Matching
-0,name,text,text,True
-1,tickers,json,json,True

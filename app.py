@@ -5,6 +5,8 @@ from handlers.process import DatabaseCheckHandler
 from helpers.date import DateHelper
 from utils.log import logger
 
+# main function where the execution will start
+
 
 def main():
     try:
